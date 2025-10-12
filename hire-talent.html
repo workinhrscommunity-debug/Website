@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkinHrs - Hire Talent</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .cta-button-primary {
+            background-color: #2563eb; /* Blue */
+            color: white;
+        }
+        .cta-button-primary:hover {
+            background-color: #1d4ed8;
+        }
+        .cta-button-secondary {
+            background-color: #f97316; /* Orange */
+            color: white;
+        }
+        .cta-button-secondary:hover {
+            background-color: #ea580c;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header / Navigation -->
+    <header id="header" class="bg-white shadow-md fixed w-full z-20 top-0">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <!-- IMPORTANT: Replace this placeholder with the actual URL of your logo -->
+                <img src="https://i.ibb.co/L5Bf8fG/Workin-Hrs-logo.jpg" alt="WorkinHrs Logo" class="h-10 w-auto">
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html#how-it-works" class="text-gray-600 hover:text-blue-600 transition duration-300">How It Works</a>
+                <a href="find-work.html" class="text-gray-600 hover:text-blue-600 transition duration-300">Find Work</a>
+                <a href="index.html#contact" class="text-gray-600 hover:text-blue-600 transition duration-300">Contact</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#" class="text-gray-600 hover:text-blue-600 font-medium">Log In</a>
+                <a href="#" class="cta-button-primary px-5 py-2 rounded-full font-semibold shadow-sm transition duration-300">Sign Up</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="index.html#how-it-works" class="block py-2 px-4 text-sm hover:bg-gray-100">How It Works</a>
+            <a href="find-work.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Find Work</a>
+            <a href="index.html#contact" class="block py-2 px-4 text-sm hover:bg-gray-100">Contact</a>
+            <div class="p-4 border-t">
+                 <a href="#" class="block w-full text-center mb-2 bg-gray-100 py-2 rounded-md font-semibold">Log In</a>
+                 <a href="#" class="block w-full text-center cta-button-primary py-2 rounded-md font-semibold">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-24 bg-gray-50 min-h-screen">
+        <div class="container mx-auto px-6 py-8">
+            <div class="text-center">
+                <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2">Find the Perfect Talent for Your Project</h1>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">Access a pool of motivated, tech-savvy students and freshers ready to bring your ideas to life.</p>
+                 <a href="#" class="cta-button-secondary px-8 py-3 rounded-full font-bold text-lg shadow-lg transform hover:scale-105 transition duration-300 inline-block">Post a Job for Free</a>
+            </div>
+
+             <!-- Why Hire Section -->
+            <section id="why-hire" class="py-20">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Why Hire from WorkinHrs?</h2>
+                        <p class="text-gray-600 mt-2">Unlock a world of potential for your business.</p>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-10">
+                        <div class="text-center p-6 bg-white rounded-lg shadow-md">
+                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-orange-100 text-orange-600 mx-auto mb-4">
+                               <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Cost-Effective Solutions</h3>
+                            <p class="text-gray-600">Get high-quality work done by talented individuals at a fraction of the cost of traditional hiring.</p>
+                        </div>
+                        <div class="text-center p-6 bg-white rounded-lg shadow-md">
+                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-orange-100 text-orange-600 mx-auto mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Fresh Perspectives</h3>
+                            <p class="text-gray-600">Inject new energy and innovative ideas into your projects with the next generation of talent.</p>
+                        </div>
+                        <div class="text-center p-6 bg-white rounded-lg shadow-md">
+                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-orange-100 text-orange-600 mx-auto mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" /><path d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Discover Future Stars</h3>
+                            <p class="text-gray-600">Be the first to work with promising students who could become your future full-time employees.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-bold text-lg mb-2">WorkinHrs</h3>
+                    <p class="text-gray-400">Get paid for your time.</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-3">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Press</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-3">Support</h3>
+                     <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Help Center</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h3 class="font-semibold mb-3">Connect With Us</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.28C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16.02 6.13,17.26 8.13,17.29C6.67,18.45 4.84,19.17 2.83,19.17C2.5,19.17 2.17,19.15 1.85,19.11C3.85,20.41 6.32,21.16 8.98,21.16C16,21.16 20.23,15.42 20.23,10.15C20.23,9.98 20.23,9.82 20.22,9.65C20.98,9.12 21.79,8.42 22.46,7.63V6Z"></path></svg>
+                        </a>
+                         <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19M18.5,18.5V13.2A3.26,3.26 0 0,0 15.24,9.94C14.39,9.94 13.4,10.43 12.92,11.24V10.13H10.13V18.5H12.92V13.57C12.92,12.8 13.54,12.17 14.31,12.17A1.4,1.4 0 0,1 15.71,13.57V18.5H18.5M6.88,8.56A1.68,1.68 0 0,0 8.56,6.88C8.56,6 7.78,5.2 6.88,5.2A1.68,1.68 0 0,0 5.2,6.88C5.2,7.78 6,8.56 6.88,8.56M8.27,18.5V10.13H5.5V18.5H8.27Z"></path></svg>
+                        </a>
+                    </div>
+                    <a href="mailto:workinhrs.community@gmail.com" class="text-gray-400 hover:text-white flex items-center space-x-2">
+                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        <span>workinhrs.community@gmail.com</span>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-500">
+                <p>&copy; 2025 WorkinHrs. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
