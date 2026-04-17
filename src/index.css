@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-bg-deep: #FFFFFF;
+  --color-bg-card: #F8FAFC;
+  --color-brand-blue: #0084C7;
+  --color-brand-orange: #F27D26;
+  --color-text-dim: #64748B;
+  
+  --radius-minimal: 8px;
+  --radius-card: 24px;
+}
+
+@layer base {
+  body {
+    @apply bg-bg-deep text-[#0F172A] font-sans antialiased selection:bg-brand-blue/30;
+  }
+}
+
+@layer utilities {
+  .logo-style {
+    @apply font-extrabold text-[22px] tracking-[-0.5px] text-brand-blue;
+  }
+
+  .glass {
+    @apply bg-white/80 backdrop-blur-[12px] border-b border-black/5;
+  }
+  
+  .glass-card {
+    @apply bg-white border border-black/5 rounded-[24px] shadow-sm shadow-black/5;
+  }
+
+  .nav-link {
+    @apply text-text-dim text-sm font-medium transition-colors hover:text-brand-orange;
+  }
+
+  .btn-cta-nav {
+    @apply bg-brand-orange text-white px-6 py-3 rounded-[8px] font-semibold text-sm transition-opacity hover:opacity-90;
+  }
+
+  .hero-title {
+    @apply text-4xl sm:text-5xl lg:text-[64px] leading-[1.1] font-extrabold tracking-[-2px] mb-6 text-[#0F172A];
+  }
+
+  .btn-hero-primary {
+    @apply bg-brand-blue text-white px-8 py-4 rounded-[12px] font-bold transition-transform hover:scale-[1.02] shadow-lg shadow-brand-blue/20;
+  }
+
+  .btn-hero-secondary {
+    @apply bg-white border border-black/10 text-[#0F172A] px-8 py-4 rounded-[12px] font-bold transition-all hover:bg-black/5;
+  }
+
+  .accent-gradient {
+    @apply bg-gradient-to-br from-brand-blue to-brand-orange;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-bg-deep;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-black/10 rounded-full hover:bg-brand-blue/30 transition-colors;
+}
+ 
+
